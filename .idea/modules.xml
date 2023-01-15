@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../PSP_SGR_Echo_Client/PSP_SGR_Echo_Client.iml" filepath="$PROJECT_DIR$/../PSP_SGR_Echo_Client/PSP_SGR_Echo_Client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PSP_SGR_Echo_Server.iml" filepath="$PROJECT_DIR$/PSP_SGR_Echo_Server.iml" />
+    </modules>
+  </component>
+</project>

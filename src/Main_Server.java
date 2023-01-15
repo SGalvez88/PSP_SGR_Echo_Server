@@ -1,0 +1,27 @@
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class Main_Server {
+    public static void main(String[] args) {
+
+        try(
+            ServerSocket server = new ServerSocket(6000);
+            Socket service = server.accept();
+            DataInputStream socketIn = new DataInputStream(service.getInputStream());
+            DataOutputStream socketOut = new DataOutputStream(service.getOutputStream());
+        ){
+            String message = socketIn.readUTF();
+            System.out.println("Received: "+message);
+
+            socketOut.writeUTF(message.toUpperCase());
+
+        }catch (IOException exception){
+            System.err.println(exception);
+        }
+
+
+    }
+}
